@@ -106,7 +106,7 @@ class StudentListView(LoginRequiredMixin,ListView):
 
 class StudentListUpdateView(UpdateView):
     model = Student
-    form_class = StudentRegistrationForm
+    fields = student_fields
     template_name_suffix = '_update_form'
     success_url = '/register/cirstaff/success/'
 
