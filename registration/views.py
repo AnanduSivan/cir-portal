@@ -131,3 +131,9 @@ class StudentFilterExternalView(ListView):
        print(cgpa + arrears + branch + tenth + twelth)
        return Student.Objects.filter(cgpa__gte=cgpa, curr_arrears=arrears, branch=branch,
                                      tenth_mark__gte=tenth, twelth_mark__gte=twelth)
+
+
+class StudentTechnicalView(FormView):
+   template_name= 'register/cirstaff/tests/technical_tests.html'
+
+
